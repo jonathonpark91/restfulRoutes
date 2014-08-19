@@ -1,0 +1,7 @@
+<% form_for @item do |f| %>
+
+Name: <%= f.text_field :name %><br>
+Description: <%= f.text_area :description, size:"30x3" %><br>
+Price: <%= f.number_field :price, step: 0.01 %><br>
+Picture: <%= f.text_field :image_url %> 
+<% end %>

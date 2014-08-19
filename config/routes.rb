@@ -9,8 +9,8 @@ get 'items' => 'items#index'
 get 'items/new' => 'items#new'
 post 'items' => 'items#create'
 get 'items/:id' => 'items#show', as: :item
-
-
+get 'items/:id/edit' => 'items#edit', as: :edit_item
+patch 'items/:id' => 'items#update'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
