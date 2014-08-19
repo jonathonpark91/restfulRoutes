@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 root 'items#index'
 get 'items' => 'items#index'
 get 'items/new' => 'items#new'
+post 'items' => 'items#create'
+get 'items/:id' => 'items#show', as: :item
+
 
 
   # Example of regular route:
