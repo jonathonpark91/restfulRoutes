@@ -2,13 +2,7 @@
 <ul>
 <% @items.each do |item| %>
 
-<li><%= item.name %>
-</li>
-<li><%= item.description %>
-</li>
-<li><%= item.price %>
-</li>
-<li><%= item.image_url %>
+<li><%= link_to item.name, item %>
 </li>
 
 <% end %>
