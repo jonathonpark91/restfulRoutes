@@ -1,11 +1,10 @@
-<ul>
-<li><%= @item.name %></li>
-<li><%= @item.description %></li>
-<li>$ <%= @item.price %></li>
-<li><%= image_tag @item.image_url %></li>
-</ul>
+<%= @item.name %><br>
+<%= @item.description %><br>
+$ <%= @item.price %><br>
+<%= image_tag @item.image_url %><br>
 
-<%= link_to "Back", items_path, class= "btn btn-primary" %>
-<%= link_to "Edit", edit_item_path, class="btn btn-warning" %>
 
+<%= link_to "Back", items_path, class: "btn btn-primary" %>
+<%= link_to "Edit", edit_item_path, class: "btn btn-warning" %>
+<%= link_to "Delete", @items, method: 'delete', class: "btn btn-danger" %>
 

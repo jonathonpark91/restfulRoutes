@@ -11,6 +11,7 @@ post 'items' => 'items#create'
 get 'items/:id' => 'items#show', as: :item
 get 'items/:id/edit' => 'items#edit', as: :edit_item
 patch 'items/:id' => 'items#update'
+delete 'items/:id' => 'items#destroy', as: :delete_item
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
